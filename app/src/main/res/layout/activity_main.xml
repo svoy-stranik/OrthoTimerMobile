@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25:00"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Работа"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/startPauseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Старт"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/lunchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обед"
+        android:layout_marginTop="10dp" />
+
+    <!-- ✅ Новая кнопка "Завершить день" -->
+    <Button
+        android:id="@+id/finishDayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Завершить день"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/todoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Задачи"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/quoteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textStyle="italic" />
+
+</LinearLayout>

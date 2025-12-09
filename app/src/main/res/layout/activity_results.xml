@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/black">
+
+    <!-- Заголовок "Итоги дня" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Итоги дня:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/totalTimeWorkedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Работал: 0 ч 0 мин"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/shortBreaksCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Коротких перерывов: 0"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/lunchesCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обедов: 0"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Текст "Сделано Странником" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сделано Странником."
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Текст "Надеюсь, вы нашли..." -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Надеюсь, вы нашли сегодня немного времени для молитвы!"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Ссылка на Telegram -->
+    <TextView
+        android:id="@+id/telegramLinkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telegram: https://t.me/periplanomenoc"
+        android:textColor="#0096FF"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Кнопки COPY и OPEN -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:layout_marginBottom="32dp">
+
+        <Button
+            android:id="@+id/copyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COPY"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#7B1FA2"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/openBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPEN"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#1976D2" />
+
+    </LinearLayout>
+
+    <!-- Кнопка "Начать новый день" -->
+    <Button
+        android:id="@+id/startNewDayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Начать новый день"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#7B1FA2"
+        android:layout_gravity="end" />
+
+</LinearLayout>
